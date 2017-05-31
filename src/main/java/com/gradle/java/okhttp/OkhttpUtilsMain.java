@@ -114,7 +114,7 @@ public class OkhttpUtilsMain {
         
 		OkHttpClient client = new OkHttpClient();
 		Request request = new Request.Builder()
-				.url("http://localhost:8080/spring-mvc-showcase/api/getHeaders")
+				.url("http://localhost:8080/spring-mvc-showcase/http/getHeaders")
 				.header("cookie", "JSESSIONID=EB36DE5E50E342D86C55DAE0CDDD4F6D")
 				.addHeader("content-type", "text/html;charset:utf-8")
 				.post(RequestBody.create(JSONTYPE, json_1))
@@ -182,7 +182,7 @@ public class OkhttpUtilsMain {
 		String postBody = "Hello World";
 		OkHttpClient client = new OkHttpClient();
 		Request request = new Request.Builder()
-				.url("http://localhost:8080/spring-mvc-showcase/api/getHeaders")
+				.url("http://localhost:8080/spring-mvc-showcase/http/getHeaders")
 				.header("cookie", "JSESSIONID=EB36DE5E50E342D86C55DAE0CDDD4F6D")
 				.addHeader("content-type", "text/html;charset:utf-8")
 				.addHeader("Home", "china")

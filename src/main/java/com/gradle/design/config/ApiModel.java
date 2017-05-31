@@ -1,4 +1,4 @@
-package com.gradle.api.config;
+package com.gradle.design.config;
 
 
 /**

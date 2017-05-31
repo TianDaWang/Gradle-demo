@@ -1,4 +1,4 @@
-package com.gradle.api.uas;
+package com.gradle.test.http;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -33,7 +33,7 @@ import rx.Subscriber;
  * @author Arison RaoMeng
  */
 @SuppressWarnings("unused")
-public class UASApi {
+public class testUASApi {
    
 	private static String sessionId;
 	private static String emcode;
@@ -116,6 +116,10 @@ public class UASApi {
 //		api_workExtra_uncommit();
 //		api_workExtra_update();
 		api_workExtra_dete();
+	}
+
+	public static void api_extra_work(){
+
 	}
 	
 	
@@ -510,7 +514,7 @@ public class UASApi {
 		// String json_3 = "{'type':'dfdf','data','你好3'}";
 		Request request = new Request.Builder()
 				.addHeader("content-type", "application/json;charset:utf-8")
-				.url("http://192.168.253.200:8080/spring-mvc-showcase/api/paramBody3")
+				.url("http://192.168.253.200:8080/spring-mvc-showcase/http/paramBody3")
 				// .post(RequestBody.create(MediaType.parse("application/json; charset=utf-8"),
 				// json_1))
 				// .post(RequestBody.create(MediaType.parse("application/json; charset=utf-8"),

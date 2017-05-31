@@ -29,7 +29,7 @@ public class RetrofitUtils {
 	public Retrofit retrofit;
 	private static int retryCount=2;
 	
-	//api service
+	//http service
 	private ParamService paramService;
 	@SuppressWarnings("unused")
 	private GitHubService gitHubService;
@@ -53,7 +53,7 @@ public class RetrofitUtils {
 			    
 			    .build();
 		
-		//init api service
+		//init http service
 		
 		paramService=retrofit.create(ParamService.class);
 		

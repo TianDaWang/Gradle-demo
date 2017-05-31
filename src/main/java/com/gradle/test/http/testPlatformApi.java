@@ -1,32 +1,23 @@
-package com.gradle.api.uas;
+package com.gradle.test.http;
 
 import java.io.IOException;
-import java.nio.Buffer;
-import java.security.KeyStore.Entry;
-import java.util.Date;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.alibaba.fastjson.JSON;
 import com.gradle.android.retrofit.OkhttpUtils;
-import com.gradle.api.config.ApiBase;
-import com.gradle.api.config.ApiConfig;
-import com.gradle.api.config.ApiPlatform;
-import com.gradle.api.config.ApiUtils;
+import com.gradle.design.config.ApiBase;
+import com.gradle.design.config.ApiConfig;
+import com.gradle.design.config.ApiPlatform;
+import com.gradle.design.config.ApiUtils;
 import com.gradle.java.rxjava.RxBus;
-import com.gradle.java.utils.DateFormatUtil;
 import com.gradle.java.utils.StringUtils;
 
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
-import okhttp3.FormBody.Builder;
 import rx.Observer;
-import rx.functions.Action1;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
@@ -40,7 +31,7 @@ import okhttp3.Response;
  *
  */
 @SuppressWarnings("unused")
-public class PlatformApi {
+public class testPlatformApi {
 	
 	private final static String METHOD_GET="get";
 	private final static String METHOD_POST="post";
@@ -68,7 +59,7 @@ public class PlatformApi {
 		//测试环境  正式环境
 		url.setmBaseUrl(ApiPlatform.mBaseUrl_devtest);
 		//管理平台登录---参数
-		UASApi.loginManage(username, password);// 管理平台登录
+		testUASApi.loginManage(username, password);// 管理平台登录
 		//执行登录
 	    taskRun();
 	    //执行异步任务

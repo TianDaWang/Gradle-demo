@@ -1,4 +1,4 @@
-package com.gradle.api.github;
+package com.gradle.test.http;
 
 import java.io.IOException;
 
@@ -9,10 +9,10 @@ import okhttp3.Callback;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class GithubApi {
+public class testGithubApi {
 	
 	
-	private static String baseUrl="https://api.github.com/";
+	private static String baseUrl="https://http.github.com/";
 	private static String page="1";
 	private static String per_page="30";
 	

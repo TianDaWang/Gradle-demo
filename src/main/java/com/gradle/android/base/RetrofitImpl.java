@@ -58,9 +58,12 @@ public class RetrofitImpl extends HttpBase {
 
 		LogInterceptor logInterceptor = new LogInterceptor();
 		logInterceptor.setBuilder(mbuilder);
-		okBuilder.addInterceptor(logInterceptor);	
-		okBuilder.cache(new Cache(mbuilder.getCacheFile(), mbuilder.getCacheFileSize()));
-		okBuilder.addInterceptor(new CacheInterceptor(String.valueOf(mbuilder.getCacheTime()),mbuilder.getCacheType()));
+		okBuilder.addInterceptor(logInterceptor);
+		if (mbuilder.getCacheFileSize()!=0){
+			okBuilder.cache(new Cache(mbuilder.getCacheFile(), mbuilder.getCacheFileSize()));
+			okBuilder.addInterceptor(new CacheInterceptor(String.valueOf(mbuilder.getCacheTime()),mbuilder.getCacheType()));
+		}
+
 		//后期缓存策略改进
 		switch (mbuilder.getCacheType()) {
 			case CacheType.ONLY_NETWORK:

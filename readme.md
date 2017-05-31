@@ -11,7 +11,7 @@
    
 ## 功能模块
 
-- 【Okhttp接口测试】在[com.gradle.api.uas](https://github.com/Arisono/Gradle-demo/tree/master/src/main/java/com/gradle/api/uas)包名下;
+- 【Okhttp接口测试】在[com.gradle.http.uas](https://github.com/Arisono/Gradle-demo/tree/master/src/main/java/com/gradle/api/uas)包名下;
 - 【Java常用几种加密算法】在[com.gradle.java.encryption](https://github.com/Arisono/Gradle-demo/tree/master/src/main/java/com/gradle/java/encryption)包名下 ;[加密算法测试](https://github.com/Arisono/Gradle-demo/tree/master/src/main/java/com/gradle/java/test)
 - 【Rxjava的学习笔记】在[com.gradle.java.rxjava](https://github.com/Arisono/Gradle-demo/tree/master/src/main/java/com/gradle/java/rxjava)包名下;
 - 【LeetCode源码及题解】在[com.gradle.java.leetcode](https://github.com/Arisono/Gradle-demo/tree/master/src/main/java/com/gradle/java/leetcode)包名下;
